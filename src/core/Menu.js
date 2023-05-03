@@ -23,12 +23,12 @@ const Menu = () => {
                         <ul className="navbar-nav d-none d-lg-flex ml-auto">
 
 {/* nav item 1 */}
-                            <li className="nav-item dropdown ml-2 mr-2">
-                                <Link className="link" to="/" style={{ textDecoration: 'none' }}>
-                                    <span className="nav-link" data-toggle="dropdown">Why Surl?</span>
+                            {/* <li className="nav-item dropdown ml-2 mr-2"> */}
+                                {/* <Link className="link" to="/info" style={{ textDecoration: 'none' }}>
+                                    <span className="nav-link" data-toggle="dropdown">Why Shortly?</span>
                                 </Link>
-                                <div className="underline"></div>
-                                    <div className="dropdown-menu border border-light shadow-sm pt-3 pb-3 pl-2 pr-2">
+                                <div className="underline"></div> */}
+                                    {/* <div className="dropdown-menu border border-light shadow-sm pt-3 pb-3 pl-2 pr-2">
 
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
@@ -69,9 +69,16 @@ const Menu = () => {
                                             </div>
                                         </Link>
 
-                                    </div>
-                            </li>
-
+                                    </div> */}
+                            {/* </li> */}
+                            <Link className="dropdown-item" to="/info">
+                                            <div className="wrap-drop-down d-flex mb-1">
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Why Shortly<br /></span>
+                    
+                                                </div>
+                                            </div>
+                                        </Link>
 {/* nav item 2 */}
                             <li className="nav-item dropdown  ml-2 mr-2">
                                 <Link to="/" style={{ textDecoration: 'none' }}>
@@ -198,13 +205,22 @@ const Menu = () => {
                                     </div>
                             </li>
 
-{/* nav item 4 */}
+{/* nav item 4
                             <li className="nav-item dropdown  ml-2 mr-2">
-                                <Link className="link" to="/" style={{ textDecoration: 'none' }}>
+                                <Link className="link" to="/payment" style={{ textDecoration: 'none' }}>
                                     <span className="nav-link" data-toggle="dropdown">Pricing</span>
                                 </Link>
                                 <div className="underline"></div>
-                            </li>
+                            </li> */}
+
+                             <Link className="dropdown-item" to="/payment">
+                                            <div className="wrap-drop-down d-flex mb-1">
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Subscription<br /></span>
+                    
+                                                </div>
+                                            </div>
+                                        </Link>
 
 {/* nav item 5 */}
                             <li className="nav-item dropdown  ml-2 mr-2">
@@ -245,6 +261,15 @@ const Menu = () => {
                                                 </div>
                                             </div>
                                         </Link>
+
+                                        {/* <Link className="dropdown-item" to="/payment">
+                                            <div className="wrap-drop-down d-flex mb-1">
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Payment<br /></span>
+                                                        <div className="info-text text-muted">Payment</div>
+                                                </div>
+                                            </div>
+                                        </Link> */}
 
                                         <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
@@ -299,9 +324,9 @@ const Menu = () => {
                                 </>
                             )}
 
-                            <li className="nav-item d-none d-lg-flex">
+                            {/* <li className="nav-item d-none d-lg-flex">
                                 <button type="button" className="nav-btn btn btn-primary">Get a Quote</button>
-                            </li>
+                            </li> */}
                         </ul>
 
                     </div>
