@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { logout, isAuthenticated } from '../auth'
-
+import Payment from '../user/payment'
 import logo from './res/logo.png'
 
 const Menu = () => {
@@ -71,7 +71,8 @@ const Menu = () => {
 
                                     </div> */}
                             {/* </li> */}
-                            <Link className="dropdown-item" to="/info">
+                            <ul>
+                                        <Link className="dropdown-item" to="/info">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="drop-content">
                                                         <span className="text-dark">Why Shortly<br /></span>
@@ -79,8 +80,9 @@ const Menu = () => {
                                                 </div>
                                             </div>
                                         </Link>
+                          </ul>
 {/* nav item 2 */}
-                            <li className="nav-item dropdown  ml-2 mr-2">
+                            {/* <li className="nav-item dropdown  ml-2 mr-2">
                                 <Link to="/" style={{ textDecoration: 'none' }}>
                                     <span className="nav-link" data-toggle="dropdown">Solutions</span>
                                 </Link>
@@ -140,14 +142,26 @@ const Menu = () => {
                                         </Link>
 
                                     </div>
-                            </li>
+                            </li> */}
 
 {/* nav item 3 */}
-                            <li className="nav-item dropdown  ml-2 mr-2">
-                                <Link to="/" style={{ textDecoration: 'none' }}>
-                                    <span className="nav-link" data-toggle="dropdown">Features</span>
-                                </Link>
-                                <div className="underline"></div>
+                              <div>
+                                        <Link className="dropdown-item" to="/create-link">
+                                            <div className="wrap-drop-down d-flex mb-1">
+                                                <div className="drop-content">
+                                                        <span className="text-dark">Short Link<br /></span>
+                    
+                                                </div>
+                                            </div>
+                                        </Link>
+                            </div>
+                            {/* <li className="nav-item dropdown  ml-2 mr-2"> */}
+                            {/* <div> */}
+                                {/* <Link to="/create-link" style={{ textColor:"black" }}>
+                                    <span className="nav-link" data-toggle="dropdown"><b>Create Link</b></span>
+                                </Link> */}
+                             {/* </div> */}
+                                {/* <div className="underline"></div>
                                     <div className="dropdown-menu border border-light shadow-sm pt-3 pb-3 pl-2 pr-2">
 
                                         <Link className="dropdown-item" to="/">
@@ -202,8 +216,8 @@ const Menu = () => {
                                                 </div>
                                             </div>
                                         </Link>
-                                    </div>
-                            </li>
+                                    </div> */}
+                            {/* </li> */}
 
 {/* nav item 4
                             <li className="nav-item dropdown  ml-2 mr-2">
@@ -213,7 +227,8 @@ const Menu = () => {
                                 <div className="underline"></div>
                             </li> */}
 
-                             <Link className="dropdown-item" to="/payment">
+                            <div>
+                                        <Link className="dropdown-item" to="/payment">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="drop-content">
                                                         <span className="text-dark">Subscription<br /></span>
@@ -221,9 +236,10 @@ const Menu = () => {
                                                 </div>
                                             </div>
                                         </Link>
+                            </div>
 
 {/* nav item 5 */}
-                            <li className="nav-item dropdown  ml-2 mr-2">
+                            {/* <li className="nav-item dropdown  ml-2 mr-2">
                                 <Link className="link" to="/" style={{ textDecoration: 'none' }}>
                                     <span className="nav-link" data-toggle="dropdown">Resources</span>
                                 </Link>
@@ -271,19 +287,19 @@ const Menu = () => {
                                             </div>
                                         </Link> */}
 
-                                        <Link className="dropdown-item" to="/">
+                                        {/* <Link className="dropdown-item" to="/">
                                             <div className="wrap-drop-down d-flex mb-1">
                                                 <div className="drop-content">
                                                         <span className="text-dark">Support <br /></span>
                                                         <div className="info-text text-muted">FAQs and help articles</div>
                                                 </div>
                                             </div>
-                                        </Link>
+                                        </Link> */}
                                         
-                                    </div>
+                                    {/* </div> */}
 
-                                </div>
-                            </li>
+                                {/* </div> */}
+                            {/* </li>  */}
                             
                         </ul>
 {/* nav 2 */}
@@ -306,7 +322,7 @@ const Menu = () => {
                                 <>
 
                                     <li className="nav-item mr-4">
-                                            <Link className="nav-link signup" to="/dashboard">Dashboard</Link>
+                                            <Link className="nav-link signup" to="/dashboard">Analytics</Link>
                                     </li>
 
                                     <li className="nav-item mr-4">
@@ -337,3 +353,5 @@ const Menu = () => {
 }
 
 export default withRouter(Menu)
+
+
