@@ -1,0 +1,41 @@
+.subscription-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan {
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.basic-plan {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.premium-plan {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.price-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 20px 0;
+}
+.subscription-plans .price {
+  color: blue; /* replace with your desired color */
+  font-size:30px;
+}
+.price-btn:hover {
+  background-color: #774949;
+}

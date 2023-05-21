@@ -39,7 +39,7 @@ export default function Home() {
                                 </button>
 
                                 <div className="sub-button d-none d-sm-block">
-                                    Get a Quote
+                                    Shorten. Track. Succeed.
                                 </div>
                             </div>
                         </div>
